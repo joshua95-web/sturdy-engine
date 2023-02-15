@@ -1,4 +1,4 @@
-const computerChoice;
+let computerChoice;
 
 const computerNumber = Math.random();
 if (computerNumber < .33) {
