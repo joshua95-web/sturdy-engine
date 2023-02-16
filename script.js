@@ -37,4 +37,13 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() === "paper" && computerSelection === "scissors") {
         return "You lose! Scissors cuts paper. Ouch.";
     }
+    if (playerSelection.toLowerCase() === "scissors" && computerSelection === "rock") {
+        return "You lose! Rock smashes scissors.";
+    }
+    if (playerSelection.toLowerCase() === "scissors" && computerSelection === "paper") {
+        return "You win! scissors cuts paper. Snipsnip.";
+    }
+    if (playerSelection.toLowerCase() === "scissors" && computerSelection === "scissors") {
+        return "It's a tie!";
+    }
 }
