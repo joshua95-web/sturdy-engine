@@ -11,3 +11,12 @@ if (computerNumber < .33) {
 }
 return computerChoice;
 }
+
+function getPlayerChoice() {
+    const playerChoice = prompt("Rock, paper or scissors?");
+}
+
+function playRound(playerSelection, computerSelection) {
+    const playerSelection = getPlayerChoice();
+    const computerSelection = getComputerChoice();
+}
