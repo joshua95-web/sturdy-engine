@@ -19,4 +19,13 @@ function getPlayerChoice() {
 function playRound(playerSelection, computerSelection) {
     const playerSelection = getPlayerChoice();
     const computerSelection = getComputerChoice();
+    if (playerSelection.toLowerCase() === "rock" && computerSelection === "rock") {
+        return "It's a tie!";
+    }
+    if (playerSelection.toLowerCase() === "rock" && computerSelection === "paper") {
+        return "You lose! Paper beats rock. Idiot.";
+    }
+    if (playerSelection.toLowerCase() === "rock" && computerSelection === "scissors") {
+        return "You win! Rock beats scissors.";
+    }
 }
