@@ -23,9 +23,18 @@ function playRound(playerSelection, computerSelection) {
         return "It's a tie!";
     }
     if (playerSelection.toLowerCase() === "rock" && computerSelection === "paper") {
-        return "You lose! Paper beats rock. Idiot.";
+        return "You lose! Paper covers rock. Idiot.";
     }
     if (playerSelection.toLowerCase() === "rock" && computerSelection === "scissors") {
-        return "You win! Rock beats scissors.";
+        return "You win! Rock smashes scissors.";
+    }
+    if (playerSelection.toLowerCase() === "paper" && computerSelection === "rock") {
+        return "You win! Paper covers rock.";
+    }
+    if (playerSelection.toLowerCase() === "paper" && computerSelection === "paper") {
+        return "It's a tie!";
+    }
+    if (playerSelection.toLowerCase() === "paper" && computerSelection === "scissors") {
+        return "You lose! Scissors cuts paper. Ouch.";
     }
 }
