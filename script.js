@@ -48,3 +48,14 @@ function playRound() {
         return "It's a tie!";
     }
 }
+
+function game() {
+    let results = [];
+
+for (let i = 1; i < 6; i++) {
+  let result = playRound();
+  results.push(result);
+}
+
+console.log(results);
+}
