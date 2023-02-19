@@ -64,6 +64,10 @@ for (let i = 1; i < 6; i++) {
     computerScore++;
   }
 }
-
-console.log(results);
+console.log("Final score: Human: " + playerScore + ", Computer: " + computerScore);
+if (playerScore < computerScore) {
+    console.log("The computer is victorious... Human as been defeated.");
+} else if (playerScore > computerScore) {
+    console.log ("Human has succeeded. Computer is defeated.");
+}
 }
