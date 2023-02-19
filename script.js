@@ -69,5 +69,7 @@ if (playerScore < computerScore) {
     console.log("The computer is victorious... Human as been defeated.");
 } else if (playerScore > computerScore) {
     console.log ("Human has succeeded. Computer is defeated.");
+} else if (playerScore = computerScore) {
+    console.log("You both destroyed each other. In war, there are no winners");
 }
 }
