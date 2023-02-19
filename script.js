@@ -54,6 +54,7 @@ function game() {
 
 for (let i = 1; i < 6; i++) {
   let result = playRound();
+  console.log(result);
   results.push(result);
 }
 
