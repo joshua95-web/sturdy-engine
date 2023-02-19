@@ -14,9 +14,10 @@ return computerChoice;
 
 function getPlayerChoice() {
     const playerChoice = prompt("Rock, paper or scissors?");
+    return playerChoice;
 }
 
-function playRound(playerSelection, computerSelection) {
+function playRound() {
     const playerSelection = getPlayerChoice();
     const computerSelection = getComputerChoice();
     if (playerSelection.toLowerCase() === "rock" && computerSelection === "rock") {
