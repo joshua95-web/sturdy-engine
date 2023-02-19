@@ -50,12 +50,19 @@ function playRound() {
 }
 
 function game() {
+    let playerScore = 0;
+    let computerScore = 0;
     let results = [];
 
 for (let i = 1; i < 6; i++) {
   let result = playRound();
   console.log(result);
   results.push(result);
+  if (result.startsWith("You win!")) {
+    playerScore++;
+  } else if (result.startsWith("You lose!")) {
+    computerScore++;
+  }
 }
 
 console.log(results);
