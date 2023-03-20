@@ -16,37 +16,38 @@ const buttonRock = document.querySelector(".rock");
 
 buttonRock.addEventListener("click", () => {
     const playerChoice = "rock"; /* prompt("Rock, paper or scissors?");*/
+    playRound();
 });
 
 
 
 function playRound(playerChoice) {
     const computerSelection = getComputerChoice();
-    if (playerChoice.toLowerCase() === "rock" && computerSelection === "rock") {
+    if (playerChoice === "rock" && computerSelection === "rock") {
         return "It's a tie!";
     }
-    if (playerChoice.toLowerCase() === "rock" && computerSelection === "paper") {
+    if (playerChoice === "rock" && computerSelection === "paper") {
         return "You lose! Paper covers rock. Idiot.";
     }
-    if (playerChoice.toLowerCase() === "rock" && computerSelection === "scissors") {
+    if (playerChoice === "rock" && computerSelection === "scissors") {
         return "You win! Rock smashes scissors.";
     }
-    if (playerChoice.toLowerCase() === "paper" && computerSelection === "rock") {
+    if (playerChoice === "paper" && computerSelection === "rock") {
         return "You win! Paper covers rock.";
     }
-    if (playerChoice.toLowerCase() === "paper" && computerSelection === "paper") {
+    if (playerChoice === "paper" && computerSelection === "paper") {
         return "It's a tie!";
     }
-    if (playerChoice.toLowerCase() === "paper" && computerSelection === "scissors") {
+    if (playerChoice === "paper" && computerSelection === "scissors") {
         return "You lose! Scissors cuts paper. Ouch.";
     }
-    if (playerChoice.toLowerCase() === "scissors" && computerSelection === "rock") {
+    if (playerChoice === "scissors" && computerSelection === "rock") {
         return "You lose! Rock smashes scissors.";
     }
-    if (playerChoice.toLowerCase() === "scissors" && computerSelection === "paper") {
+    if (playerChoice === "scissors" && computerSelection === "paper") {
         return "You win! scissors cuts paper. Snipsnip.";
     }
-    if (playerChoice.toLowerCase() === "scissors" && computerSelection === "scissors") {
+    if (playerChoice === "scissors" && computerSelection === "scissors") {
         return "It's a tie!";
     } else {
         return "Invalid input. Please choose rock, paper, or scissors.";
