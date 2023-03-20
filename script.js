@@ -12,12 +12,14 @@ if (computerNumber < .33) {
 return computerChoice;
 }
 
+
+
 const buttonRock = document.querySelector(".rock");
 
 buttonRock.addEventListener("click", () => {
 /* prompt("Rock, paper or scissors?");*/
     game();
-    playRound("rock");
+    playRound();
 });
 
 
