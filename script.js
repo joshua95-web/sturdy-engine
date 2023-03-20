@@ -54,14 +54,23 @@ function playRound(playerChoice) {
     }
 }
 
-const results = document.querySelector("#results")
+const results = document.querySelector("#results");
+const humanResults = document.createElement("p");
+const computerResults = document.createElement("p");
+humanResults.textContent = "Human:";
+computerResults.textContent = "Computer:";
+
+
+
+results.appendChild(humanResults);
+results.appendChild(computerResults);
 
 function game() {
     let playerScore = 0;
     let computerScore = 0;
     results = [playerScore, computerScore];
 
-/*
+
 
 for (let i = 1; i < 6; i++) {
   let result = playRound();
@@ -74,7 +83,7 @@ for (let i = 1; i < 6; i++) {
   }
 }
 
-*/
+
 console.log("Final score: Human: " + playerScore + ", Computer: " + computerScore);
 if (playerScore < computerScore) {
     console.log("The computer is victorious... Human as been defeated.");
