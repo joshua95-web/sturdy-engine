@@ -15,8 +15,9 @@ return computerChoice;
 const buttonRock = document.querySelector(".rock");
 
 buttonRock.addEventListener("click", () => {
-    const playerChoice = "rock"; /* prompt("Rock, paper or scissors?");*/
-    playRound();
+/* prompt("Rock, paper or scissors?");*/
+    game();
+    playRound("rock");
 });
 
 
@@ -69,18 +70,17 @@ results.appendChild(computerResults);
 function game() {
     let playerScore = 0;
     let computerScore = 0;
-    results = [playerScore, computerScore];
+    const resultsArray = [];
 
 
 
 for (let i = 1; i < 6; i++) {
   let result = playRound();
   console.log(result);
-  results.push(result);
   if (result.startsWith("You win!")) {
-    playerScore++;
+    playerScore++; resultsArray.push(playerScore);
   } else if (result.startsWith("You lose!")) {
-    computerScore++;
+    computerScore++; resultsArray.push(computerScore);
   }
 }
 
