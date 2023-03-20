@@ -12,39 +12,41 @@ if (computerNumber < .33) {
 return computerChoice;
 }
 
-function getPlayerChoice() {
-    const playerChoice = prompt("Rock, paper or scissors?");
-    return playerChoice;
-}
+const buttonRock = document.querySelector(".rock");
 
-function playRound() {
-    const playerSelection = getPlayerChoice();
+buttonRock.addEventListener("click", () => {
+    const playerChoice = "rock"; /* prompt("Rock, paper or scissors?");*/
+});
+
+
+
+function playRound(playerChoice) {
     const computerSelection = getComputerChoice();
-    if (playerSelection.toLowerCase() === "rock" && computerSelection === "rock") {
+    if (playerChoice.toLowerCase() === "rock" && computerSelection === "rock") {
         return "It's a tie!";
     }
-    if (playerSelection.toLowerCase() === "rock" && computerSelection === "paper") {
+    if (playerChoice.toLowerCase() === "rock" && computerSelection === "paper") {
         return "You lose! Paper covers rock. Idiot.";
     }
-    if (playerSelection.toLowerCase() === "rock" && computerSelection === "scissors") {
+    if (playerChoice.toLowerCase() === "rock" && computerSelection === "scissors") {
         return "You win! Rock smashes scissors.";
     }
-    if (playerSelection.toLowerCase() === "paper" && computerSelection === "rock") {
+    if (playerChoice.toLowerCase() === "paper" && computerSelection === "rock") {
         return "You win! Paper covers rock.";
     }
-    if (playerSelection.toLowerCase() === "paper" && computerSelection === "paper") {
+    if (playerChoice.toLowerCase() === "paper" && computerSelection === "paper") {
         return "It's a tie!";
     }
-    if (playerSelection.toLowerCase() === "paper" && computerSelection === "scissors") {
+    if (playerChoice.toLowerCase() === "paper" && computerSelection === "scissors") {
         return "You lose! Scissors cuts paper. Ouch.";
     }
-    if (playerSelection.toLowerCase() === "scissors" && computerSelection === "rock") {
+    if (playerChoice.toLowerCase() === "scissors" && computerSelection === "rock") {
         return "You lose! Rock smashes scissors.";
     }
-    if (playerSelection.toLowerCase() === "scissors" && computerSelection === "paper") {
+    if (playerChoice.toLowerCase() === "scissors" && computerSelection === "paper") {
         return "You win! scissors cuts paper. Snipsnip.";
     }
-    if (playerSelection.toLowerCase() === "scissors" && computerSelection === "scissors") {
+    if (playerChoice.toLowerCase() === "scissors" && computerSelection === "scissors") {
         return "It's a tie!";
     } else {
         return "Invalid input. Please choose rock, paper, or scissors.";
@@ -56,6 +58,8 @@ function game() {
     let computerScore = 0;
     let results = [];
 
+/*
+
 for (let i = 1; i < 6; i++) {
   let result = playRound();
   console.log(result);
@@ -66,6 +70,8 @@ for (let i = 1; i < 6; i++) {
     computerScore++;
   }
 }
+
+*/
 console.log("Final score: Human: " + playerScore + ", Computer: " + computerScore);
 if (playerScore < computerScore) {
     console.log("The computer is victorious... Human as been defeated.");
