@@ -54,6 +54,10 @@ function playRound(playerChoice) {
     }
 }
 
+const results = document.querySelector("#results")
+
+
+
 function game() {
     let playerScore = 0;
     let computerScore = 0;
