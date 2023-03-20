@@ -60,7 +60,8 @@ const computerResults = document.createElement("p");
 humanResults.textContent = "Human:";
 computerResults.textContent = "Computer:";
 
-
+results.style.backgroundColor = "green";
+results.style.color = "white";
 
 results.appendChild(humanResults);
 results.appendChild(computerResults);
