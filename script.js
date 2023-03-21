@@ -27,33 +27,32 @@ buttonRock.addEventListener("click", () => {
 
 
 
-function playRound(playerChoice) {
-    const computerSelection = getComputerChoice();
-    if (playerChoice === "rock" && computerSelection === "rock") {
+function playRound(playerChoice, computerChoice) {
+    if (playerChoice === "rock" && computerChoice === "rock") {
         return "It's a tie!";
     }
-    if (playerChoice === "rock" && computerSelection === "paper") {
+    if (playerChoice === "rock" && computerChoice === "paper") {
         return "You lose! Paper covers rock. Idiot.";
     }
-    if (playerChoice === "rock" && computerSelection === "scissors") {
+    if (playerChoice === "rock" && computerChoice === "scissors") {
         return "You win! Rock smashes scissors.";
     }
-    if (playerChoice === "paper" && computerSelection === "rock") {
+    if (playerChoice === "paper" && computerChoice === "rock") {
         return "You win! Paper covers rock.";
     }
-    if (playerChoice === "paper" && computerSelection === "paper") {
+    if (playerChoice === "paper" && computerChoice === "paper") {
         return "It's a tie!";
     }
-    if (playerChoice === "paper" && computerSelection === "scissors") {
+    if (playerChoice === "paper" && computerChoice === "scissors") {
         return "You lose! Scissors cuts paper. Ouch.";
     }
-    if (playerChoice === "scissors" && computerSelection === "rock") {
+    if (playerChoice === "scissors" && computerChoice === "rock") {
         return "You lose! Rock smashes scissors.";
     }
-    if (playerChoice === "scissors" && computerSelection === "paper") {
+    if (playerChoice === "scissors" && computerChoice === "paper") {
         return "You win! scissors cuts paper. Snipsnip.";
     }
-    if (playerChoice === "scissors" && computerSelection === "scissors") {
+    if (playerChoice === "scissors" && computerChoice === "scissors") {
         return "It's a tie!";
     } else {
         return "Invalid input. Please choose rock, paper, or scissors.";
