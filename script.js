@@ -23,7 +23,6 @@ buttonRock.addEventListener("click", () => {
     getComputerChoice();
     console.log(playerChoice);
     console.log(computerChoice);
-    playRound(playerChoice, computerChoice);
 });
 
 
@@ -80,7 +79,7 @@ function game() {
 
 
 for (let i = 1; i < 6; i++) {
-  let result = playRound();
+  let result = playRound(playerChoice, computerChoice);
   console.log(result);
   if (result.startsWith("You win!")) {
     playerScore++; resultsArray.push(playerScore);
