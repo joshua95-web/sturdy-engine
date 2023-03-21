@@ -26,7 +26,7 @@ buttonRock.addEventListener("click", () => {
 
 const buttonPaper = document.querySelector(".paper");
 
-buttonRock.addEventListener("click", () => {
+buttonPaper.addEventListener("click", () => {
     playerChoice = "paper";
     getComputerChoice();
     console.log(playerChoice);
@@ -36,7 +36,7 @@ buttonRock.addEventListener("click", () => {
 
 const buttonScissors = document.querySelector(".scissors");
 
-buttonRock.addEventListener("click", () => {
+buttonScissors.addEventListener("click", () => {
     playerChoice = "scissors";
     getComputerChoice();
     console.log(playerChoice);
