@@ -24,6 +24,26 @@ buttonRock.addEventListener("click", () => {
     game();
 });
 
+const buttonPaper = document.querySelector(".paper");
+
+buttonRock.addEventListener("click", () => {
+    playerChoice = "paper";
+    getComputerChoice();
+    console.log(playerChoice);
+    console.log(computerChoice);
+    game();
+});
+
+const buttonScissors = document.querySelector(".scissors");
+
+buttonRock.addEventListener("click", () => {
+    playerChoice = "scissors";
+    getComputerChoice();
+    console.log(playerChoice);
+    console.log(computerChoice);
+    game();
+});
+
 
 
 function playRound(playerChoice, computerChoice) {
