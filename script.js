@@ -17,12 +17,11 @@ return computerChoice;
 const buttonRock = document.querySelector(".rock");
 
 buttonRock.addEventListener("click", () => {
-/* prompt("Rock, paper or scissors?");*/
-    game();
     playerChoice = "rock";
     getComputerChoice();
     console.log(playerChoice);
     console.log(computerChoice);
+    game();
 });
 
 
