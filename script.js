@@ -53,9 +53,7 @@ function playRound(playerChoice, computerChoice) {
     }
     if (playerChoice === "scissors" && computerChoice === "scissors") {
         return "It's a tie!";
-    } else {
-        return "Invalid input. Please choose rock, paper, or scissors.";
-    }
+    } 
 }
 
 const results = document.querySelector("#results");
