@@ -1,6 +1,6 @@
-function getComputerChoice() {
-
 let computerChoice;
+
+function getComputerChoice() {
 
 const computerNumber = Math.random();
 if (computerNumber < .33) {
