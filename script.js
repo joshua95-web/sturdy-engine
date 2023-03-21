@@ -88,14 +88,15 @@ results.style.color = "white";
 results.appendChild(humanResults);
 results.appendChild(computerResults);
 
+let playerScore = 0;
+let computerScore = 0;
+
 function game() {
-    let playerScore = 0;
-    let computerScore = 0;
     const resultsArray = [];
 
 
 
-for (let i = 1; i < 6; i++) {
+/* for (let i = 1; i < 6; i++) { */
   let result = playRound(playerChoice, computerChoice);
   console.log(result);
   if (result.startsWith("You win!")) {
@@ -117,4 +118,4 @@ if (playerScore < computerScore) {
 } else if (playerScore == computerScore) {
     console.log("You both destroyed each other. In war, there are no winners");
 }
-}
+/*}*/
