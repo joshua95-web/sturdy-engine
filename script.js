@@ -19,6 +19,8 @@ const buttonRock = document.querySelector(".rock");
 buttonRock.addEventListener("click", () => {
 /* prompt("Rock, paper or scissors?");*/
     game();
+    playerChoice = "rock";
+    console.log(playerChoice);
     playRound();
 });
 
