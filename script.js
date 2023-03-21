@@ -44,6 +44,8 @@ buttonScissors.addEventListener("click", () => {
     game();
 });
 
+const outcomeBox = document.querySelector("#outcomeBox")
+
 
 
 function playRound(playerChoice, computerChoice) {
@@ -94,9 +96,7 @@ let computerScore = 0;
 function game() {
     const resultsArray = [];
 
-
-
-/* for (let i = 1; i < 6; i++) { */
+    for (let i = 1; i < 6; i++) { 
   let result = playRound(playerChoice, computerChoice);
   console.log(result);
   if (result.startsWith("You win!")) {
@@ -118,4 +118,4 @@ if (playerScore < computerScore) {
 } else if (playerScore == computerScore) {
     console.log("You both destroyed each other. In war, there are no winners");
 }
-/*}*/
+}
