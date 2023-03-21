@@ -80,7 +80,10 @@ for (let i = 1; i < 6; i++) {
   console.log(result);
   if (result.startsWith("You win!")) {
     playerScore++; resultsArray.push(playerScore);
-  } else if (result.startsWith("You lose!")) {
+  } if (result.startsWith("You lose!")) {
+    computerScore++; resultsArray.push(computerScore);
+  } if (result.startsWith("It's a tie!")) {
+    playerScore++; resultsArray.push(playerScore);
     computerScore++; resultsArray.push(computerScore);
   }
 }
