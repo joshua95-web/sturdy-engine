@@ -45,7 +45,7 @@ buttonScissors.addEventListener("click", () => {
 });
 
 const outcomeBox = document.querySelector("#outcomeBox")
-
+let outcome = document.createElement("p");
 
 
 function playRound(playerChoice, computerChoice) {
@@ -101,11 +101,17 @@ function game() {
   console.log(result);
   if (result.startsWith("You win!")) {
     playerScore++; resultsArray.push(playerScore);
+    outcome.textContent = (result);
+    outcomeBox.appendChild(outcome);
   } if (result.startsWith("You lose!")) {
     computerScore++; resultsArray.push(computerScore);
+    outcome = result;
+    outcomeBox.appendChild(outcome);
   } if (result.startsWith("It's a tie!")) {
     playerScore++; resultsArray.push(playerScore);
     computerScore++; resultsArray.push(computerScore);
+    outcome = result;
+    outcomeBox.appendChild(outcome);
   }
 }
 
