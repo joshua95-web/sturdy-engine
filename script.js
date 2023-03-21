@@ -22,6 +22,7 @@ buttonRock.addEventListener("click", () => {
     playerChoice = "rock";
     getComputerChoice();
     console.log(playerChoice);
+    console.log(computerChoice);
     playRound(playerChoice, computerChoice);
 });
 
