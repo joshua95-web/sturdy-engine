@@ -96,7 +96,7 @@ let computerScore = 0;
 function game() {
     const resultsArray = [];
 
-    for (let i = 1; i < 6; i++) { 
+    // for (let i = 1; i < 6; i++) { 
   let result = playRound(playerChoice, computerChoice);
   console.log(result);
   if (result.startsWith("You win!")) {
@@ -113,7 +113,7 @@ function game() {
     outcome.textContent = (result);
     outcomeBox.appendChild(outcome);
   }
-}
+// }
 
 
 console.log("Final score: Human: " + playerScore + ", Computer: " + computerScore);
