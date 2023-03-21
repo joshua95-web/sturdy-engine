@@ -105,12 +105,12 @@ function game() {
     outcomeBox.appendChild(outcome);
   } if (result.startsWith("You lose!")) {
     computerScore++; resultsArray.push(computerScore);
-    outcome = result;
+    outcome.textContent = (result);
     outcomeBox.appendChild(outcome);
   } if (result.startsWith("It's a tie!")) {
     playerScore++; resultsArray.push(playerScore);
     computerScore++; resultsArray.push(computerScore);
-    outcome = result;
+    outcome.textContent = (result);
     outcomeBox.appendChild(outcome);
   }
 }
