@@ -110,7 +110,7 @@ function game() {
 }
 
 
-console.log("Final score: Human: " + playerScore + ", Computer: " + computerScore);
+console.log("Score: Human: " + playerScore + ", Computer: " + computerScore);
 if (playerScore < computerScore) {
     console.log("The computer is victorious... Human as been defeated.");
 } else if (playerScore > computerScore) {
