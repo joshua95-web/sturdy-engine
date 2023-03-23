@@ -78,6 +78,9 @@ function playRound(playerChoice, computerChoice) {
     } 
 }
 
+let playerScore = 0;
+let computerScore = 0;
+
 const results = document.querySelector("#results");
 const humanResults = document.createElement("p");
 const computerResults = document.createElement("p");
@@ -89,9 +92,6 @@ results.style.color = "white";
 
 results.appendChild(humanResults);
 results.appendChild(computerResults);
-
-let playerScore = 0;
-let computerScore = 0;
 
 function game() {
     const resultsArray = [];
@@ -114,7 +114,7 @@ function game() {
     outcomeBox.appendChild(outcome);
   }
   if (playerScore === 5 || computerScore === 5) {
-    
+
   }
 // }
 
