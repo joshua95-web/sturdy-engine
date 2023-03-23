@@ -44,16 +44,26 @@ buttonScissors.addEventListener("click", () => {
     game();
 });
 
-const outcomeBox = document.querySelector("#outcomeBox");
-let outcome = document.createElement("p");
 
 const choices = document.querySelector("#choices");
 let choice = document.createElement("p");
 
 
+const outcomeBox = document.querySelector("#outcomeBox");
+let outcome = document.createElement("p");
+
+
+
+function displayChoices() {
+    choice.textContent(playerChoice + " vs " + computerChoice);
+    choices.appendChild(choice);
+}
+
+
 function playRound(playerChoice, computerChoice) {
+    
     if (playerChoice === "rock" && computerChoice === "rock") {
-        return "It's a tie!"; 
+        return "It's a tie!";
     }
     if (playerChoice === "rock" && computerChoice === "paper") {
         return "You lose! Paper covers rock. Idiot.";
@@ -79,6 +89,9 @@ function playRound(playerChoice, computerChoice) {
     if (playerChoice === "scissors" && computerChoice === "scissors") {
         return "It's a tie!";
     } 
+
+    displayChoices();
+
 }
 
 let playerScore = 0;
