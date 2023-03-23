@@ -84,8 +84,8 @@ let computerScore = 0;
 const results = document.querySelector("#results");
 const humanResults = document.createElement("p");
 const computerResults = document.createElement("p");
-humanResults.textContent = "Human:";
-computerResults.textContent = "Computer:";
+humanResults.textContent = `Human: ${playerScore}`;
+computerResults.textContent = `Computer: ${computerScore}`;
 
 results.style.backgroundColor = "green";
 results.style.color = "white";
