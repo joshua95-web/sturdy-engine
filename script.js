@@ -44,13 +44,16 @@ buttonScissors.addEventListener("click", () => {
     game();
 });
 
-const outcomeBox = document.querySelector("#outcomeBox")
+const outcomeBox = document.querySelector("#outcomeBox");
 let outcome = document.createElement("p");
+
+const choices = document.querySelector("#choices");
+let choice = document.createElement("p");
 
 
 function playRound(playerChoice, computerChoice) {
     if (playerChoice === "rock" && computerChoice === "rock") {
-        return "It's a tie!";
+        return "It's a tie!"; 
     }
     if (playerChoice === "rock" && computerChoice === "paper") {
         return "You lose! Paper covers rock. Idiot.";
