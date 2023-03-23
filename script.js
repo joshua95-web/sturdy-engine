@@ -113,6 +113,9 @@ function game() {
     outcome.textContent = (result);
     outcomeBox.appendChild(outcome);
   }
+  if (playerScore === 5 || computerScore === 5) {
+    
+  }
 // }
 
 
