@@ -47,6 +47,8 @@ buttonScissors.addEventListener("click", () => {
 
 const choices = document.querySelector("#choices");
 let choice = document.createElement("p");
+choices.style.width = "500px";
+choices.style.height = "100px";
 
 
 const outcomeBox = document.querySelector("#outcomeBox");
