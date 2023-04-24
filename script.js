@@ -107,10 +107,8 @@ computerResults.textContent = `Computer: ${computerScore}`;
 
 results.style.backgroundColor = "green";
 results.style.color = "white";
-
 results.appendChild(humanResults);
 results.appendChild(computerResults);
-
 
 const endGame = function() {
 console.log("Final score: Human: " + playerScore + ", Computer: " + computerScore);
