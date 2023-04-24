@@ -117,11 +117,17 @@ const endgameWinnerAnnouncement = document.createElement("p");
 const endGame = function() {
 endgameStatement.textContent = "Final score: Human: " + playerScore + ", Computer: " + computerScore;
 if (playerScore < computerScore) {
-    console.log("The computer is victorious... Human as been defeated.");
+    endgameWinnerAnnouncement.textContent = "The computer is victorious... Human as been defeated.";
+    endgameBox.appendChild(endgameStatement);
+    endgameBox.appendChild(endgameWinnerAnnouncement);
 } else if (playerScore > computerScore) {
-    console.log ("Human has succeeded. Computer is defeated.");
+    endgameStatement.textContent = "Human has succeeded. Computer is defeated.";
+    endgameBox.appendChild(endgameStatement);
+    endgameBox.appendChild(endgameWinnerAnnouncement);
 } else if (playerScore == computerScore) {
-    console.log("You both destroyed each other. In war, there are no winners");
+    endgameStatement.textContent = "You both destroyed each other. In war, there are no winners";
+    endgameBox.appendChild(endgameStatement);
+    endgameBox.appendChild(endgameWinnerAnnouncement);
 }
 }
 
