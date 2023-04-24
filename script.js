@@ -112,6 +112,7 @@ results.appendChild(computerResults);
 
 const endgameBox = document.querySelector("#endgameBox");
 const endgameStatement = document.createElement("p");
+const endgameWinnerAnnouncement = document.createElement("p");
 
 const endGame = function() {
 endgameStatement.textContent = "Final score: Human: " + playerScore + ", Computer: " + computerScore;
