@@ -105,8 +105,6 @@ let computerScore = resultsArrayComputer;
 const results = document.querySelector("#results");
 const humanResults = document.createElement("p");
 const computerResults = document.createElement("p");
-humanResults.textContent = `Human: ${playerScore}`;
-computerResults.textContent = `Computer: ${computerScore}`;
 
 results.style.backgroundColor = "green";
 results.style.color = "white";
@@ -159,6 +157,7 @@ function game() {
   if (playerScore === 5 || computerScore === 5) {
     endGame();
   }
-  
+  humanResults.textContent = `Human: ${playerScore}`;
+computerResults.textContent = `Computer: ${computerScore}`;
 }
 // }
