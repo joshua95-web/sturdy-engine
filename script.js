@@ -143,16 +143,16 @@ function game() {
   let result = playRound(playerChoice, computerChoice);
   console.log(result);
   if (result.startsWith("You win!")) {
-    playerScore++; resultsArray.push(playerScore);
+    playerScore++; resultsArrayHuman.push(playerScore);
     outcome.textContent = (result);
     outcomeBox.appendChild(outcome);
   } if (result.startsWith("You lose!")) {
-    computerScore++; resultsArray.push(computerScore);
+    computerScore++; resultsArrayComputer.push(computerScore);
     outcome.textContent = (result);
     outcomeBox.appendChild(outcome);
   } if (result.startsWith("It's a tie!")) {
-    playerScore++; resultsArray.push(playerScore);
-    computerScore++; resultsArray.push(computerScore);
+    playerScore++; resultsArrayHuman.push(playerScore);
+    computerScore++; resultsArrayComputer.push(computerScore);
     outcome.textContent = (result);
     outcomeBox.appendChild(outcome);
   }
