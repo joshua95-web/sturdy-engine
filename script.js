@@ -96,8 +96,11 @@ function playRound(playerChoice, computerChoice) {
 
 }
 
-let playerScore = 0;
-let computerScore = 0;
+const resultsArrayHuman = [];
+const resultsArrayComputer = [];
+
+let playerScore = resultsArrayHuman;
+let computerScore = resultsArrayComputer;
 
 const results = document.querySelector("#results");
 const humanResults = document.createElement("p");
@@ -133,9 +136,6 @@ buttonRock.remove();
 buttonPaper.remove();
 buttonScissors.remove();
 }
-
-const resultsArrayHuman = [];
-const resultsArrayComputer = [];
 
 function game() {
 
