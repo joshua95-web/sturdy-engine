@@ -129,6 +129,9 @@ if (playerScore < computerScore) {
     endgameBox.appendChild(endgameStatement);
     endgameBox.appendChild(endgameWinnerAnnouncement);
 }
+buttonRock.remove();
+buttonPaper.remove();
+buttonScissors.remove();
 }
 
 
