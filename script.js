@@ -134,10 +134,10 @@ buttonPaper.remove();
 buttonScissors.remove();
 }
 
-
+const resultsArrayHuman = [];
+const resultsArrayComputer = [];
 
 function game() {
-    const resultsArray = [];
 
     // for (let i = 1; i < 6; i++) { 
   let result = playRound(playerChoice, computerChoice);
@@ -159,5 +159,6 @@ function game() {
   if (playerScore === 5 || computerScore === 5) {
     endGame();
   }
+  
 }
 // }
