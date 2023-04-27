@@ -108,6 +108,12 @@ const computerResults = document.createElement("p");
 
 results.style.backgroundColor = "rgb(218, 92, 42)";
 results.style.color = "white";
+results.style.fontFamily = "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";
+results.style.fontSize = "25px";
+results.style.padding = "20px";
+results.style.borderRadius = "30px";
+results.style.margin = "10px";
+results.style.border = "solid rgb(255, 255, 255)";
 results.appendChild(humanResults);
 results.appendChild(computerResults);
 
