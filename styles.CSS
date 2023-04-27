@@ -6,4 +6,7 @@ body {
 #buttons {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 50%;
+    margin-right: 50%;
+    display: flex;
+    justify-content: center;
 }
