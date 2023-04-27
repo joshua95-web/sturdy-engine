@@ -106,7 +106,7 @@ const results = document.querySelector("#results");
 const humanResults = document.createElement("p");
 const computerResults = document.createElement("p");
 
-results.style.backgroundColor = "green";
+results.style.backgroundColor = "rgb(218, 92, 42)";
 results.style.color = "white";
 results.appendChild(humanResults);
 results.appendChild(computerResults);
