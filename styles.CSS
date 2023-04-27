@@ -27,3 +27,9 @@ button:hover {
     background-color: rgb(218, 136, 42);
     color: rgb(0, 0, 0);
 }
+
+button:active {
+    font-size: 25px;
+    background-color: rgb(255, 42, 42);
+    color: rgb(0, 0, 0);
+}
