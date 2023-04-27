@@ -136,9 +136,13 @@ if (playerScore < computerScore) {
     endgameBox.appendChild(endgameStatement);
     endgameBox.appendChild(endgameWinnerAnnouncement);
 }
-buttonRock.remove();
-buttonPaper.remove();
-buttonScissors.remove();
+buttonRock.disabled = true;
+buttonPaper.disabled = true;
+buttonScissors.disabled = true;
+
+buttonRock.style.backgroundColor = "grey";
+buttonPaper.style.backgroundColor = "grey";
+buttonScissors.style.backgroundColor = "grey";
 }
 
 function game() {
