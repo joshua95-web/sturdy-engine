@@ -47,3 +47,9 @@ button:active {
     font-size: 30px;
     text-align: center;
 }
+
+#endgameBox {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+}
